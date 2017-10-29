@@ -19,6 +19,7 @@ from health import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.basicView.as_view()),
+    url(r'^doctor/',views.doc_date, name = 'docdate'),
     url(r'^health/',include('health.urls',namespace='health')),
 
 ]
