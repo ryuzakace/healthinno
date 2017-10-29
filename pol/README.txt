@@ -1,0 +1,5 @@
+-> This android app transmits the sensor reading to the desire server location.
+-> Volley Library has been used to solve the above purpose
+-> Post Method is used.
+-> A delay of three seconds has been introduced between two readings
+-> To run this app, open it in android studio and hence run it in any device
