@@ -1,0 +1,18 @@
+{% extends "health/health_base.html" %}
+{% block body_block %}
+  <div class="jumbotron">
+    <h1>Welcome to the Sensor Details Page</h1>
+    <h2>Sensor Details:</h2>
+    <p>Id_num: {{sensor_details.id}}</p>
+    <p>Name: {{sensor_details.name}}</p>
+
+    <h3>Data:</h3>
+
+      {% for d in sensor_details.datas.all %}
+
+      <p>When Timestamp is {{d.time}} , the reading was {{d.value}} units.</p>
+{% endfor %}
+  </div>
+
+
+{% endblock %}
