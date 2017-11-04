@@ -1,0 +1,15 @@
+{% extends "health/health_base.html" %}
+{% block body_block %}
+  <div class="jumbotron">
+
+    <h1>List of Patients : </h1>
+      <ol>
+        {% for p in stuff %}
+          <h2><li><a href="{{p.id}}/">{{p.name}} </a></li></h2>
+        {% endfor %}
+      </ol>
+
+  </div>
+
+
+{% endblock %}
